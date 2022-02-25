@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id ="app">
+        <input type="color" v-model="btn.background">
+        <label for="width">Width</label>
+        <input id="width" type="text" v-model = btn.width>
+        <label for="height">Height</label>
+        <input id="height" type="text" v-model = btn.height>
+        <label for="fontSize">FontSize</label>
+        <input id="fontSize" type="text" v-model = btn.fontSize>
+        <label for="fontFamily">FontFamily</label>
+        <input id="fontFamily" type="text" v-model = btn.fontFamily>
+
+
+        {{btn.background}}
+        <a :style="btn" href="">Lydia Fossati Kaster</a>
+     
+       
+      
+        
+       
+    </div>
+       
+        
+  
+    
+
+
+    <script>
+        const vm = new Vue ({
+            el: "#app",
+            data: {
+
+                btn: {
+                    background: "",
+                    width: "0px",
+                    height: "0px",
+                    fontSize: "20px",
+                    fontFamily: "monospace",
+                }
+               
+
+               
+                
+
+                
+
+               
+            },
+
+        });
+        
+
+                
+               
+                    
+
+              
+
+          
+            
+ 
+                
+
+                
+            
+                
+            
+            
+       
+
+    </script>
+
+    <style>
+        label {
+            display:block;
+        }
+
+        a {
+            margin-top: 100px;
+            display:block;
+            
+        }
+
+        
+    </style>
+</body>
+</html>
